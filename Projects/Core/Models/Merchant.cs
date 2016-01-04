@@ -1,7 +1,7 @@
 ﻿using System;
-using Enums;
+using FP.Core.Context.Enums;
 
-namespace Models
+namespace FP.Core.Models
 {
     public class Merchant : BaseTable
     {

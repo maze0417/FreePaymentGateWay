@@ -1,4 +1,4 @@
-﻿namespace Enums
+﻿namespace FP.Core.Context.Enums
 {
     public enum StatusCode
     {

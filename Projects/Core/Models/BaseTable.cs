@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Models
+namespace FP.Core.Models
 {
     public abstract class BaseTable
     {

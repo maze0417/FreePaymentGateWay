@@ -7,8 +7,8 @@
     <ProjectGuid>{018E0669-5BF3-45FB-8407-CE07E0A93142}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Models</RootNamespace>
-    <AssemblyName>Models</AssemblyName>
+    <RootNamespace>FP.Core.Models</RootNamespace>
+    <AssemblyName>FP.Core.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,6 +43,12 @@
     <Compile Include="BaseTable.cs" />
     <Compile Include="Merchant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Context\Context.csproj">
+      <Project>{fe47e389-e6d5-4c41-890f-800500c1a459}</Project>
+      <Name>Context</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
