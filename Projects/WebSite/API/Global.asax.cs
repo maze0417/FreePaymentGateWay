@@ -2,7 +2,7 @@
 using FreePayment.Core.Infrastructure.UnityConfigs;
 using Unity.WebApi;
 
-namespace FreePayment.Data.API
+namespace FreePayment.Web.DataApi
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

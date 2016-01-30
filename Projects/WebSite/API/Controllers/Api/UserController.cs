@@ -4,7 +4,7 @@ using System.Web.Http;
 using FreePayment.Core.Interfaces.DbRepositories.Queries;
 using FreePayment.Data.Models.DbEntities;
 
-namespace FreePayment.Data.API.Controllers.Api
+namespace FreePayment.Web.DataApi.Controllers.Api
 {
     [RoutePrefix("api/users")]
     public class UserController : ApiController

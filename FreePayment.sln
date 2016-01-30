@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbRepositories", "Projects\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{00ADFBBD-F0C9-4E40-9C9A-192A09062BFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "Projects\WebSite\API\API.csproj", "{B6ED4485-4533-4D90-B246-566B3B8A9F6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApi", "Projects\WebSite\API\DataApi.csproj", "{B6ED4485-4533-4D90-B246-566B3B8A9F6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Projects\Core\Infrastructure\Infrastructure.csproj", "{D76785CC-58A0-4230-B6E5-82DBE7251596}"
 EndProject
@@ -63,31 +63,5 @@ Global
 		{8FFD228E-1C04-4405-A5EE-B045057261E4} = {C37C3BF5-0B04-4882-B3D4-877FBC1CF920}
 		{B6ED4485-4533-4D90-B246-566B3B8A9F6B} = {AAD7451B-BF9E-4EBB-9AD1-7FD8D53334B2}
 		{D76785CC-58A0-4230-B6E5-82DBE7251596} = {5EA636B7-FE3B-49B5-9C66-7CFD31336796}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://maze0417.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Projects\\Core\\FreePayment.Core\\FreePayment.Core.csproj
-		SccProjectTopLevelParentUniqueName1 = FreePayment.sln
-		SccProjectName1 = Projects/Core/FreePayment.Core
-		SccLocalPath1 = Projects\\Core\\FreePayment.Core
-		SccProjectUniqueName2 = Projects\\Data\\Models\\Models.csproj
-		SccProjectTopLevelParentUniqueName2 = FreePayment.sln
-		SccProjectName2 = Projects/Data/Models
-		SccLocalPath2 = Projects\\Data\\Models
-		SccProjectUniqueName3 = Projects\\Data\\DbRepositories\\DbRepositories.csproj
-		SccProjectTopLevelParentUniqueName3 = FreePayment.sln
-		SccProjectName3 = Projects/Data/DbRepositories
-		SccLocalPath3 = Projects\\Data\\DbRepositories
-		SccProjectUniqueName4 = Projects\\Data\\API\\API.csproj
-		SccProjectTopLevelParentUniqueName4 = FreePayment.sln
-		SccProjectName4 = Projects/Data/API
-		SccLocalPath4 = Projects\\Data\\API
-		SccProjectUniqueName5 = Projects\\Core\\Infrastructure\\Infrastructure.csproj
-		SccProjectTopLevelParentUniqueName5 = FreePayment.sln
-		SccProjectName5 = Projects/Core/Infrastructure
-		SccLocalPath5 = Projects\\Core\\Infrastructure
 	EndGlobalSection
 EndGlobal

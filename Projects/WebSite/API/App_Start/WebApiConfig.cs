@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using FreePayment.Core.Infrastructure.Filters.Api;
 
-namespace FreePayment.Data.API
+namespace FreePayment.Web.DataApi
 {
     public static class WebApiConfig
     {
