@@ -3,23 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{38F032CB-9327-4E99-8DFA-6FDEFFBEF1EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreePayment.Core", "Projects\Core\FreePayment.Core\FreePayment.Core.csproj", "{EB46F604-E71C-49B7-AE8A-A3D6DFCCB888}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5EA636B7-FE3B-49B5-9C66-7CFD31336796}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{80A77BF2-B2BC-4F2F-A290-72BDE9170E26}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{112B4625-ACC6-475E-AA95-B04BA1D43F58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Projects\Data\Models\Models.csproj", "{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{B9E2114D-EEC1-43FD-8910-A3CF7CA45418}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{C37C3BF5-0B04-4882-B3D4-877FBC1CF920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "Projects\DataAccessLayer\DataService\DataService.csproj", "{A223BFF3-2176-40C0-A123-5B43C24D966E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbRepositories", "Projects\Data\DbRepositories\DbRepositories.csproj", "{8FFD228E-1C04-4405-A5EE-B045057261E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Projects\Core\Models\Models.csproj", "{018E0669-5BF3-45FB-8407-CE07E0A93142}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{00ADFBBD-F0C9-4E40-9C9A-192A09062BFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Projects\Core\Interfaces\Interfaces.csproj", "{2B7B6383-2689-46A8-89C0-616DC3ECF791}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "Projects\WebSite\API\API.csproj", "{B6ED4485-4533-4D90-B246-566B3B8A9F6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Context", "Projects\Core\Context\Context.csproj", "{FE47E389-E6D5-4C41-890F-800500C1A459}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Projects\Core\Infrastructure\Infrastructure.csproj", "{D76785CC-58A0-4230-B6E5-82DBE7251596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSite", "WebSite", "{AAD7451B-BF9E-4EBB-9AD1-7FD8D53334B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,30 +33,61 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A223BFF3-2176-40C0-A123-5B43C24D966E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A223BFF3-2176-40C0-A123-5B43C24D966E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A223BFF3-2176-40C0-A123-5B43C24D966E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A223BFF3-2176-40C0-A123-5B43C24D966E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{018E0669-5BF3-45FB-8407-CE07E0A93142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{018E0669-5BF3-45FB-8407-CE07E0A93142}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{018E0669-5BF3-45FB-8407-CE07E0A93142}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{018E0669-5BF3-45FB-8407-CE07E0A93142}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B7B6383-2689-46A8-89C0-616DC3ECF791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B7B6383-2689-46A8-89C0-616DC3ECF791}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B7B6383-2689-46A8-89C0-616DC3ECF791}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B7B6383-2689-46A8-89C0-616DC3ECF791}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE47E389-E6D5-4C41-890F-800500C1A459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE47E389-E6D5-4C41-890F-800500C1A459}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE47E389-E6D5-4C41-890F-800500C1A459}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE47E389-E6D5-4C41-890F-800500C1A459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB46F604-E71C-49B7-AE8A-A3D6DFCCB888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB46F604-E71C-49B7-AE8A-A3D6DFCCB888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB46F604-E71C-49B7-AE8A-A3D6DFCCB888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB46F604-E71C-49B7-AE8A-A3D6DFCCB888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFD228E-1C04-4405-A5EE-B045057261E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFD228E-1C04-4405-A5EE-B045057261E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFD228E-1C04-4405-A5EE-B045057261E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFD228E-1C04-4405-A5EE-B045057261E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ED4485-4533-4D90-B246-566B3B8A9F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ED4485-4533-4D90-B246-566B3B8A9F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ED4485-4533-4D90-B246-566B3B8A9F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ED4485-4533-4D90-B246-566B3B8A9F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D76785CC-58A0-4230-B6E5-82DBE7251596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76785CC-58A0-4230-B6E5-82DBE7251596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76785CC-58A0-4230-B6E5-82DBE7251596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76785CC-58A0-4230-B6E5-82DBE7251596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A223BFF3-2176-40C0-A123-5B43C24D966E} = {B9E2114D-EEC1-43FD-8910-A3CF7CA45418}
-		{018E0669-5BF3-45FB-8407-CE07E0A93142} = {112B4625-ACC6-475E-AA95-B04BA1D43F58}
-		{2B7B6383-2689-46A8-89C0-616DC3ECF791} = {112B4625-ACC6-475E-AA95-B04BA1D43F58}
-		{FE47E389-E6D5-4C41-890F-800500C1A459} = {112B4625-ACC6-475E-AA95-B04BA1D43F58}
+		{EB46F604-E71C-49B7-AE8A-A3D6DFCCB888} = {5EA636B7-FE3B-49B5-9C66-7CFD31336796}
+		{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18} = {C37C3BF5-0B04-4882-B3D4-877FBC1CF920}
+		{8FFD228E-1C04-4405-A5EE-B045057261E4} = {C37C3BF5-0B04-4882-B3D4-877FBC1CF920}
+		{B6ED4485-4533-4D90-B246-566B3B8A9F6B} = {AAD7451B-BF9E-4EBB-9AD1-7FD8D53334B2}
+		{D76785CC-58A0-4230-B6E5-82DBE7251596} = {5EA636B7-FE3B-49B5-9C66-7CFD31336796}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://maze0417.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Projects\\Core\\FreePayment.Core\\FreePayment.Core.csproj
+		SccProjectTopLevelParentUniqueName1 = FreePayment.sln
+		SccProjectName1 = Projects/Core/FreePayment.Core
+		SccLocalPath1 = Projects\\Core\\FreePayment.Core
+		SccProjectUniqueName2 = Projects\\Data\\Models\\Models.csproj
+		SccProjectTopLevelParentUniqueName2 = FreePayment.sln
+		SccProjectName2 = Projects/Data/Models
+		SccLocalPath2 = Projects\\Data\\Models
+		SccProjectUniqueName3 = Projects\\Data\\DbRepositories\\DbRepositories.csproj
+		SccProjectTopLevelParentUniqueName3 = FreePayment.sln
+		SccProjectName3 = Projects/Data/DbRepositories
+		SccLocalPath3 = Projects\\Data\\DbRepositories
+		SccProjectUniqueName4 = Projects\\Data\\API\\API.csproj
+		SccProjectTopLevelParentUniqueName4 = FreePayment.sln
+		SccProjectName4 = Projects/Data/API
+		SccLocalPath4 = Projects\\Data\\API
+		SccProjectUniqueName5 = Projects\\Core\\Infrastructure\\Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName5 = FreePayment.sln
+		SccProjectName5 = Projects/Core/Infrastructure
+		SccLocalPath5 = Projects\\Core\\Infrastructure
 	EndGlobalSection
 EndGlobal
