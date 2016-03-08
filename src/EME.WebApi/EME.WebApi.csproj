@@ -162,11 +162,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\05 Business Logic Layer\EME.Data.Services\EME.Application.csproj">
+    <ProjectReference Include="..\EME.Application\EME.Application.csproj">
       <Project>{467c1a61-3789-4bb8-b1f5-df06228990ae}</Project>
       <Name>EME.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\FreePayment.Core\EME.Infrastructure.Common.csproj">
+    <ProjectReference Include="..\EME.Infrastructure.Common\EME.Infrastructure.Common.csproj">
       <Project>{eb46f604-e71c-49b7-ae8a-a3d6dfccb888}</Project>
       <Name>EME.Infrastructure.Common</Name>
     </ProjectReference>

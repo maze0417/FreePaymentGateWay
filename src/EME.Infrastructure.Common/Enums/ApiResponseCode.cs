@@ -1,4 +1,4 @@
-﻿namespace EME.Data.Models.Enums
+﻿namespace EME.Infrastructure.Common.Enums
 {
     public enum ApiResponseCode
     {

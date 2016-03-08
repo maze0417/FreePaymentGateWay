@@ -69,11 +69,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\FreePayment.Core\EME.Infrastructure.Common.csproj">
+    <ProjectReference Include="..\EME.Infrastructure.Common\EME.Infrastructure.Common.csproj">
       <Project>{eb46f604-e71c-49b7-ae8a-a3d6dfccb888}</Project>
       <Name>EME.Infrastructure.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Models\EME.Data.Models.csproj">
+    <ProjectReference Include="..\EME.Data.Models\EME.Data.Models.csproj">
       <Project>{33c8efdc-767e-4f6e-aa40-e07c3cdd6a18}</Project>
       <Name>EME.Data.Models</Name>
     </ProjectReference>

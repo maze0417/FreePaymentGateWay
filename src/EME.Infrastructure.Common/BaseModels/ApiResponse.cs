@@ -1,4 +1,4 @@
-﻿using EME.Data.Models.Enums;
+﻿using EME.Infrastructure.Common.Enums;
 
 namespace EME.Infrastructure.Common.BaseModels
 {
