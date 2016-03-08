@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
-using FreePayment.Core.Infrastructure.Filters.Api;
+using EME.Application.Filters.Api;
 
-namespace FreePayment.Web.DataApi
+namespace EME.WebApi
 {
     public static class WebApiConfig
     {

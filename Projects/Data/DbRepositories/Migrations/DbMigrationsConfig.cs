@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity.Migrations;
 
-namespace FreePayment.Data.DbRepositories.Migrations
+namespace EME.Data.SqlRepositories.Migrations
 {
     /// <summary>
     /// db migration : 

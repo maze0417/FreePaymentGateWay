@@ -1,25 +1,26 @@
 ﻿using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Web.Http;
-using FreePayment.Core.Interfaces.DbRepositories.Queries;
-using FreePayment.Data.Models.DbEntities;
+using EME.Application.Interfaces;
+using EME.Application.Responses.UserService;
 
-namespace FreePayment.Web.DataApi.Controllers.Api
+namespace EME.WebApi.Controllers.Api
 {
     [RoutePrefix("api/users")]
     public class UserController : ApiController
     {
-        private readonly IUserQueries _userQueries;
+        private readonly IUserService _userService;
 
-        public UserController(IUserQueries userQueries)
+        public UserController(IUserService userService)
         {
-            _userQueries = userQueries;
+            _userService = userService;
         }
 
+
         [HttpGet, Route, Description("Get admin users")]
-        public async Task<User> GetUsersAsync([FromUri]  string name)
+        public async Task<GetUserResponse> GetUsersAsync([FromUri]  string name)
         {
-            return await _userQueries.GetUserByUsernameAsync(name);
+            return await _userService.GetUserByUsernameAsync(name);
         }
     }
 }

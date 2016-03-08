@@ -1,4 +1,4 @@
-﻿namespace FreePayment.Core.Consts
+﻿namespace EME.Infrastructure.Common.Consts
 {
     public class DbConst
     {

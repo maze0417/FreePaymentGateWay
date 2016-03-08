@@ -1,6 +1,6 @@
-﻿using FreePayment.Data.Models.Enums;
+﻿using EME.Data.Models.Enums;
 
-namespace FreePayment.Data.Models.DTOs
+namespace EME.Infrastructure.Common.BaseModels
 {
     public interface IApiResponse
     {

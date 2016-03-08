@@ -1,7 +1,7 @@
 ﻿using System;
-using FreePayment.Data.Models.Enums;
+using EME.Data.Models.Enums;
 
-namespace FreePayment.Data.Models.DbEntities
+namespace EME.Data.Models.DbEntities
 {
     public class Payment :BaseTable
     {

@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using FreePayment.Core.Consts;
-using FreePayment.Core.Interfaces;
-using FreePayment.Data.Models.DbEntities;
+using EME.Data.Models.DbEntities;
+using EME.Infrastructure.Common.Configurations;
+using EME.Infrastructure.Common.Consts;
 
-namespace FreePayment.Data.DbRepositories.TableMaps
+namespace EME.Data.SqlRepositories.TableMaps
 {
     public class MerchantMap : EntityTypeConfiguration<Merchant>
     {

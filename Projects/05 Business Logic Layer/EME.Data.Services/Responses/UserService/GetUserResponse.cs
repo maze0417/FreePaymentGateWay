@@ -1,9 +1,10 @@
 ﻿using System;
 using EME.Data.Models.Enums;
+using EME.Infrastructure.Common.BaseModels;
 
-namespace EME.Data.Models.DbEntities
+namespace EME.Application.Responses.UserService
 {
-    public class User : BaseTable
+    public class GetUserResponse : ApiResponse
     {
         public Guid Id { get; set; }
         public Role Role { get; set; }

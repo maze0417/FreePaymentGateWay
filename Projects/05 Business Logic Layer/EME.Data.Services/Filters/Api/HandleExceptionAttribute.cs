@@ -6,7 +6,7 @@ using System.Web.Http.Filters;
 using EME.Data.Models.Enums;
 using EME.Infrastructure.Common.BaseModels;
 
-namespace EME.Application.Common.Filters.Api
+namespace EME.Application.Filters.Api
 {
     public class HandleExceptionAttribute : ExceptionFilterAttribute
     {

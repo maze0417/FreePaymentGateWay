@@ -1,4 +1,4 @@
-﻿namespace FreePayment.Data.Models.Enums
+﻿namespace EME.Data.Models.Enums
 {
     public enum Role
     {

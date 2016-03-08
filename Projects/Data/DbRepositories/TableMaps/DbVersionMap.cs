@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using FreePayment.Core.Interfaces;
-using FreePayment.Data.Models.DbEntities;
+using EME.Data.Models.DbEntities;
+using EME.Infrastructure.Common.Configurations;
 
-namespace FreePayment.Data.DbRepositories.TableMaps
+namespace EME.Data.SqlRepositories.TableMaps
 {
     public class DbVersionMap : EntityTypeConfiguration<DbVersion>
     {

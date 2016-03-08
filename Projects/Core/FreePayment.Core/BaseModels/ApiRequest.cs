@@ -1,4 +1,4 @@
-﻿namespace FreePayment.Data.Models.DTOs
+﻿namespace EME.Infrastructure.Common.BaseModels
 {
     public interface IApiRequest
     {

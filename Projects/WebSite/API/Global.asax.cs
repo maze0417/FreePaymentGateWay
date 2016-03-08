@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
-using FreePayment.Core.Infrastructure.UnityConfigs;
+using EME.Application.Factory;
 using Unity.WebApi;
 
-namespace FreePayment.Web.DataApi
+namespace EME.WebApi
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
@@ -10,7 +10,7 @@ namespace FreePayment.Web.DataApi
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             GlobalConfiguration.Configure(config
-                => config.DependencyResolver = new UnityDependencyResolver(DataApiUnityConfig.RegisterComponents()));
+                => config.DependencyResolver = new UnityDependencyResolver(UnityFactory.RegisterComponents()));
         }
     }
 }

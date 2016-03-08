@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FreePayment.Data.Models.DbEntities
+namespace EME.Data.Models.DbEntities
 {
     public class DbVersion
     {

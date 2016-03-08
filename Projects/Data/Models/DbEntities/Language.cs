@@ -1,4 +1,4 @@
-﻿namespace FreePayment.Data.Models.DbEntities
+﻿namespace EME.Data.Models.DbEntities
 {
     public class Language : BaseTable
     {

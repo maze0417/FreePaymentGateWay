@@ -4,17 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FFD228E-1C04-4405-A5EE-B045057261E4}</ProjectGuid>
+    <ProjectGuid>{33C8EFDC-767E-4F6E-AA40-E07C3CDD6A18}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FreePayment.Data.DbRepositories</RootNamespace>
-    <AssemblyName>FreePayment.Data.DbRepositories</AssemblyName>
+    <RootNamespace>EME.Data.Models</RootNamespace>
+    <AssemblyName>EME.Data.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,16 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,31 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbRepository.cs" />
-    <Compile Include="DbRepositoryFactory.cs" />
-    <Compile Include="Migrations\DbMigrationsConfig.cs" />
+    <Compile Include="DbEntities\BaseTable.cs" />
+    <Compile Include="DbEntities\DbVersion.cs" />
+    <Compile Include="DbEntities\Payment.cs" />
+    <Compile Include="Enums\ApiResponseCode.cs" />
+    <Compile Include="Enums\Status.cs" />
+    <Compile Include="Enums\Role.cs" />
+    <Compile Include="Enums\UserStatus.cs" />
+    <Compile Include="DbEntities\Language.cs" />
+    <Compile Include="DbEntities\Localization.cs" />
+    <Compile Include="DbEntities\Merchant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queries\UserQueries.cs" />
-    <Compile Include="TableMaps\DbVersionMap.cs" />
-    <Compile Include="TableMaps\LanguageMap.cs" />
-    <Compile Include="TableMaps\LocalizationMap.cs" />
-    <Compile Include="TableMaps\MerchantMap.cs" />
-    <Compile Include="TableMaps\PaymentMap.cs" />
-    <Compile Include="TableMaps\UserMap.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Core\FreePayment.Core\FreePayment.Core.csproj">
-      <Project>{eb46f604-e71c-49b7-ae8a-a3d6dfccb888}</Project>
-      <Name>FreePayment.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{33c8efdc-767e-4f6e-aa40-e07c3cdd6a18}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
+    <Compile Include="DbEntities\User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace FreePayment.Core.Helpers
+namespace EME.Infrastructure.Common.Helpers
 {
     public class AppConfigHelper
     {

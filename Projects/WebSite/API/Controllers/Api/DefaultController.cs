@@ -1,9 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Http;
+﻿using System.Web.Http;
 
-namespace FreePayment.Web.DataApi.Controllers.Api
+namespace EME.WebApi.Controllers.Api
 {
     
     public class DefaultController : ApiController

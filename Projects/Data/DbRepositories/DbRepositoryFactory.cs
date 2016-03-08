@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.Infrastructure;
-using FreePayment.Core.Configurations;
+using EME.Infrastructure.Common.Configurations;
 
-namespace FreePayment.Data.DbRepositories
+namespace EME.Data.SqlRepositories
 {
     public class DbRepositoryFactory : IDbContextFactory<DbRepository>
     {

@@ -1,15 +1,54 @@
 ﻿using System;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
-using FreePayment.Core.Interfaces;
-using FreePayment.Core.Interfaces.DbRepositories;
-using FreePayment.Data.DbRepositories.Migrations;
-using FreePayment.Data.DbRepositories.TableMaps;
-using FreePayment.Data.Models.DbEntities;
+using EME.Data.Models.DbEntities;
+using EME.Data.SqlRepositories.Migrations;
+using EME.Data.SqlRepositories.TableMaps;
+using EME.Infrastructure.Common.Configurations;
 
-namespace FreePayment.Data.DbRepositories
+namespace EME.Data.SqlRepositories
 {
+    public interface IDbRepository
+    {
+        #region table
+
+        IDbSet<Merchant> Merchants { get; set; }
+
+        IDbSet<DbVersion> DbVersions { get; set; }
+
+        IDbSet<Localization> Localizations { get; set; }
+
+        IDbSet<User> Users { get; set; }
+
+        IDbSet<Payment> Payments { get; set; }
+
+        #endregion table
+
+        Action<string> Log { get; set; }
+
+        bool HasChanges { get; }
+
+        void EnsureDataSeeding();
+
+        void SetInitialData(long newDbVersion);
+
+        void UpdateData(long oldDbVersion, long newDbVersion);
+
+        int SaveChanges();
+
+        Task<int> SaveChangesAsync();
+
+        DbEntityEntry<T> Entry<T>(T entity) where T : class;
+
+        DbContextTransaction BeginTransaction(IsolationLevel isolation);
+
+        Task<int> ExecuteSqlCommandAsync(string sql, params object[] args);
+
+        Task<TEntity[]> SqlQueryArrayAsync<TEntity>(string sql, params object[] parameters);
+    }
+
     public class DbRepository : DbContext, IDbRepository
     {
         private static readonly object InitializationLock = new object();

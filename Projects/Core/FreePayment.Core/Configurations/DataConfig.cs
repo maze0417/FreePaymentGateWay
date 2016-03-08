@@ -1,8 +1,14 @@
-﻿using FreePayment.Core.Helpers;
-using FreePayment.Core.Interfaces;
+﻿using EME.Infrastructure.Common.Helpers;
 
-namespace FreePayment.Core.Configurations
+namespace EME.Infrastructure.Common.Configurations
 {
+    public interface IDataConfig
+    {
+        string KeyForConnectionString { get; }
+        string KeyForHangfireConnectionString { get; }
+        string TablePrefix { get; }
+        string TableSchema { get; }
+    }
     public class DataConfig : IDataConfig
     {
         private const string Prefix = "data-api-";
